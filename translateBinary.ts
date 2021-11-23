@@ -18,7 +18,7 @@ function translate() {
       result[i] = '11';
     }
   }
-  return result.toString()
+  return result.join('')
 }
 
 console.log(translate())
