@@ -1,12 +1,9 @@
 function translate() {
   let arrString = 'CTCACGCCCTATCTCA'.replace(/\s+/g, '')
-  console.log(arrString)
   let arr = arrString
   let rem = arr.replace(/\s+/g, '');
-  console.log(rem)
   let re = /.{1}/g
   let result = rem.match(re)
-  console.log(result)
   for (let i = 0; i < result.length; i++) {
     if (result[i] === 'A') {
       result[i] = '00';
